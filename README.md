@@ -18,7 +18,7 @@ Generated a mathematically rigorous physical exposure dataset utilizing Excel dy
 ## Phase 2: Hazard Catalog & Vulnerability Matrix
 Engineered the static scientific parameters required for stochastic modeling.
 * **Hazard Catalog:** Hardcoded representative stochastic flood events across West Bengal, defining Return Periods, Annual Probabilities, and Max Water Depths.
-* **Vulnerability Matrix:** Developed a 2D grid plotting Mean Damage Ratios (MDR). Mapped physical destruction percentages against varying flood depths and construction classes (Kutcha, Semi-Pucca, Pucca).
+* **Vulnerability Matrix:** Structured a 2D Mean Damage Ratio (MDR) lookup grid. Quantified physical destruction percentages at specific intersections of varying flood depths and construction classes (Kutcha, Semi-Pucca, Pucca).
 
 ## Phase 3: The Calculation Engine (Simulation)
 Built a dynamic simulation engine to evaluate the portfolio's Ground-Up Loss against selected disaster scenarios.
