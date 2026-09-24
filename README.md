@@ -11,21 +11,21 @@ Generated a mathematically rigorous physical exposure dataset utilizing Excel dy
 
 **Key Technical Constraints Applied:**
 
-* **Logic-Bound Risk Combinations:** Engineered nested `IFS` statements to prevent invalid asset profiles (e.g., forcing Industrial occupancies to strictly register as 'Pucca' construction types with correlating high-end replacement values).
+* **Logic-Bound Risk Combinations:** Engineered nested `IFS` statements to prevent invalid asset profiles (e.g., forcing Industrial occupancies to strictly register as 'Reinforced Concrete' construction types with correlating high-end replacement values).
 * **Physical Flood Vulnerability:** Incorporated variables like Plinth Height (feet) and Number of Stories to accurately model ground-level water displacement.
 * **Actuarial Distribution:** Modeled Total Insured Value (TIV) using normal distributions centered around realistic replacement costs based on construction class.  
 
 ## Phase 2: Hazard Catalog & Vulnerability Matrix
 Engineered the static scientific parameters required for stochastic modeling.
 * **Hazard Catalog:** Hardcoded representative stochastic flood events across West Bengal, defining Return Periods, Annual Probabilities, and Max Water Depths.
-* **Vulnerability Matrix:** Structured a 2D Mean Damage Ratio (MDR) lookup grid. Quantified physical destruction percentages at specific intersections of varying flood depths and construction classes (Kutcha, Semi-Pucca, Pucca).
+* **Vulnerability Matrix:** Structured a 2D Mean Damage Ratio (MDR) lookup grid. Quantified physical destruction percentages at specific intersections of varying flood depths and construction classes (Adobe / Light Timber, Unreinforced Masonry, Reinforced Concrete).
 
 ## Phase 3: The Calculation Engine (Simulation)
 Built a dynamic simulation engine to evaluate the portfolio's Ground-Up Loss against selected disaster scenarios.
 * **Effective Depth Logic:** Designed formulas to subtract individual property plinth heights from incoming floodwaters, accurately representing physical risk mitigation at the asset level.
-* **2D Array Lookups:** Deployed nested `INDEX` and `MATCH` functions utilizing inline array constants (`{0,1,2,3,5,8,10}`) to bypass native Excel Table text-string limitations. This successfully executes thousands of approximate-match damage calculations instantly without workbook lag.
+* **2D Array Lookups:** Deployed nested `INDEX` and `MATCH` functions utilizing inline array constants (`{0,1,2,3,5,8,10}`) to bypass native Excel Table text-string limitations.
 
-Phase 4: Financial Structuring & Executive Dashboarding
+## Phase 4: Financial Structuring & Executive Dashboarding
 The final phase of this project transitions physical Ground-Up Loss into realized financial liability through policy and treaty-level structures, culminating in an executive-level actuarial dashboard.
 
 Reinsurance Engine (Excess of Loss)
